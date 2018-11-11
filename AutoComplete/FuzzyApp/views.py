@@ -10,6 +10,5 @@ class indexpage(TemplateView):
 class displaypage(TemplateView):
 	def get(self,request,**kwargs):
 		self.search=request.GET['search']
-        
-		return render(request,'display.html',{"search_text":self.search,"some":"shashikmmfmamr"})
+		return render(request,'display.html',{"search_text":self.search})
 
